@@ -1,0 +1,333 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    overflow-y: hidden;
+}
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+   cursor: pointer;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.nav-bar p{
+
+    font-size: 15px;
+    
+}
+
+.hamburger{
+    margin-left: 50px;
+}
+.hamburger div{
+    margin-left: 180px;
+    border: 1px solid white;
+    width: 38px;
+    margin-top: 5px;
+    background-color: white;
+    height: 1px;
+   
+}
+#div1{
+    margin-left: 49px;
+}
+#div2{
+    width: 24px;
+    margin-left:55px ;    
+}
+
+#div3{
+    width: 10px;
+    margin-left: 62px;
+}
+
+.nav-bar p{
+    margin-left: 10%;
+}
+
+#firstimg{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#buyticket{
+    position: absolute;
+    bottom: 7%;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    text-align: center;
+    align-items: center;
+    width: 30%;
+    margin-left: 35%;
+    cursor: pointer;
+    padding-bottom:8px ;
+    
+}
+
+#logoimg{
+    background-color: transparent;
+    width: 5%;
+    position: absolute;
+    bottom:3%;
+    right: 10%;
+    cursor: pointer;
+}
+
+#logoimg2{
+    background-color: transparent;
+    width: 7%;
+    position: absolute;
+    bottom:5%;
+    right: 8%;
+    cursor: pointer;
+}
+/*Second page*/
+
+.second-page{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    background-color: black;
+    overflow: hidden;
+    
+    
+}
+
+
+#sliderh1{
+    position: absolute;
+    bottom: 45%;
+    left: 90%;
+    /*transform: translateY(30%);*/
+    background-color: transparent;
+    font-size: 155px;
+    width: 180%;
+    overflow: hidden;
+    /*transition: transform 9s ease-in-out;*/
+    z-index: 3;
+   opacity: 0;
+   
+     
+}
+
+@keyframes slideInFromDown {
+    0% {
+      transform: translateX(0%);
+      height: 0px;
+    }
+    1%{
+        opacity: 1;
+    }
+    15%{
+        transform: translateY(0%);
+        opacity: 1;
+        height: 150px;
+    }
+    100% {
+        transform: translateX(-170%);
+      opacity: 1;
+    }
+  }
+
+
+#sliderh1.slide{
+    animation: slideInFromDown 7s ease-in;
+    animation-fill-mode: forwards;
+    
+    
+}
+
+#sagust{
+    position: absolute;
+    transform:rotate(0deg);
+    overflow: hidden;
+    width: 80%;
+    right: -65%;
+    top: -75%; 
+    
+}
+
+#sagust.slide1{
+    transform: translateX(-30%) translateY(5%);
+    
+    transition: transform 2s ease 7s;
+    transition-delay: 6.5s;
+}
+
+#solalt{
+    position: absolute;
+    transform:rotate(30deg);
+    overflow: hidden;
+    width: 80%;
+    left: -70%;
+    bottom: -80%;
+}
+
+#solalt.slide{
+    transform: translateX(40%) translateY(-8%);
+    
+    transition: transform 2s ease 7s;
+    transition-delay: 6.5s;
+/*
+    left: -40%;
+    bottom: -50%; */
+}
+
+#ticket{
+    position: absolute;
+    top: 8%;
+    left: 20%;
+    font-size: 45px;
+    overflow-x: hidden;
+    width: 50%;
+}
+
+.blackslide2{
+    position: absolute;
+    width: 45%;
+    height: 50px;
+    background-color: black;
+    top: 5%;
+    right: 35%;
+}
+
+.blackslide2.slider{
+    width: 0%;
+    transition: width 2s ease-in ;
+    transition-delay: 7s;
+}
+
+.blackslide{
+    position: absolute;
+    width: 50%;
+    height: 50px;
+    background-color: black;
+    top: 25%;
+    right: 25%;
+    
+}
+
+.blackslide.slider{
+    
+    width: 0%;
+    transition: width 3s ease ;
+    transition-delay: 7s;
+}
+
+#standart{
+    position: absolute;
+    bottom: 70%;
+    margin-left: 25%;
+    text-align: center;
+    font-size: 25px;
+    border-bottom:1px solid white ;
+   overflow-x: hidden;
+    padding-bottom:9px ;
+    max-height: 30px;
+    width: 50%;
+}
+
+
+
+.ticket-section{
+    position: absolute;
+    width: 60%;
+    display: flex;
+    top: 35%;
+    left: 20%;
+    justify-content: space-around;
+    height: 250px;
+    background-color: transparent;
+    overflow-x: hidden;
+    
+}
+
+.blackslide3{
+    z-index: 2;
+    position: absolute;
+    width: 59%;
+    height: 250px;
+    background-color: black;
+    top: 35%;
+    right: 20%;
+}
+
+.blackslide3.slider{
+    width: 0%;
+    
+    transition: width 3s ease-in ;
+    transition-delay: 8s;
+}
+
+.ticket-section div{
+    padding: 50px;
+    border: 1px solid white;
+
+}
+.tickets p ,button{
+    margin-top: 35px;
+    text-align: center;
+    
+}
+
+
+.tickets h5{
+    font-size: 30px;
+    text-align: center;
+}
+
+.tickets button{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 9px;
+    border: none;
+}
+
+.tickets button:hover{
+    background-color: rgb(236, 236, 236);
+}
+/*
+@keyframes slideInFromLeft {
+    0% {
+      
+      width: 0%;
+    }
+    1%{
+        opacity: 1;
+    }
+   
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+*/
+/*
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(30%);
+    }
+    .1%{
+        opacity: 1;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }*/
